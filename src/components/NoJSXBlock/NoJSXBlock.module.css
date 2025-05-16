@@ -1,0 +1,56 @@
+.block {
+  border: 2px dashed #2196f3;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.heading {
+  color: #1565c0;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.text {
+  color: #1565c0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.ksenja {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 12px;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hint {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #e51818;
+  color: #121212;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.wrapper:hover .hint {
+  visibility: visible;
+  opacity: 1;
+}
